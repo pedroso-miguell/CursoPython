@@ -1,4 +1,12 @@
-{% extends "base.html" %} {% block title %}Página inicial{% endblock %} {% block content %}
-<h1>Bem-vindo à nossa Homepage!</h1>
-<p>Está é a página inicial do nosso site construído com Flask e HTML.</p>
+{% extends 'base.html' %}
+
+{% block title %}Página Inicial{% endblock %}
+
+{% block content %}
+    <h1>Bem-vindo ao Nosso Site!</h1>
+    <div>
+        <img src="{{ url_for('static', filename='img/miguel.jpg') }}" alt="Imagem 1" width="200">
+        <img src="{{ url_for('static', filename='img/ana.jpg') }}" alt="Imagem 2" width="200">
+    </div>
+    <p>Esta é a nossa página inicial.</p>
 {% endblock %}
